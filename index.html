@@ -1,12 +1,264 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Farmacia Web Corporativa</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Farmacia Web Corporativa</h1>
-  <p>GitHub Pages funcionando correctamente 🚀</p>
-</body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..a0586c88f92266cd0b6ee6ebf0cada290a01363c
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,254 @@
++<!DOCTYPE html>
++<html lang="es">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Farmacia Vida Sana | Corporativo</title>
++    <link rel="stylesheet" href="styles.css" />
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++    <link
++      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
++      rel="stylesheet"
++    />
++  </head>
++  <body>
++    <header class="site-header">
++      <div class="container header-content">
++        <div class="brand">
++          <span class="logo">FV</span>
++          <div>
++            <p class="brand-name">Farmacia Vida Sana</p>
++            <p class="brand-tagline">Cuidado farmacéutico con respaldo clínico</p>
++          </div>
++        </div>
++        <nav class="nav">
++          <a href="#home">Home</a>
++          <a href="#services">Servicios</a>
++          <a href="#contact">Contacto</a>
++          <a href="#prescription">Subir receta</a>
++        </nav>
++        <button class="cta">Agenda tu atención</button>
++      </div>
++    </header>
++
++    <main>
++      <section id="home" class="hero">
++        <div class="container hero-grid">
++          <div>
++            <p class="eyebrow">Farmacia corporativa en Chile</p>
++            <h1>Soluciones integrales para el bienestar de tu comunidad.</h1>
++            <p class="lead">
++              Acompañamos a empresas, clínicas y hogares con un servicio farmacéutico moderno,
++              digital y cercano. Recibe asesoría, cotiza medicamentos y gestiona recetas
++              electrónicas con total seguridad.
++            </p>
++            <div class="hero-actions">
++              <button class="primary">Solicitar propuesta</button>
++              <button class="secondary">Ver servicios</button>
++            </div>
++            <div class="stats">
++              <div>
++                <strong>24/7</strong>
++                <span>Atención online</span>
++              </div>
++              <div>
++                <strong>+150</strong>
++                <span>Convenios corporativos</span>
++              </div>
++              <div>
++                <strong>98%</strong>
++                <span>Satisfacción de clientes</span>
++              </div>
++            </div>
++          </div>
++          <div class="hero-card">
++            <h3>¿Qué puedes hacer hoy?</h3>
++            <ul>
++              <li>Solicitar despacho en menos de 2 horas en Santiago.</li>
++              <li>Acceder a precios preferenciales para empresas.</li>
++              <li>Subir recetas médicas de forma segura.</li>
++              <li>Recibir seguimiento farmacoterapéutico.</li>
++            </ul>
++            <div class="hero-card-footer">
++              <span>Certificación ISP</span>
++              <span>ISO 9001</span>
++              <span>Región Metropolitana</span>
++            </div>
++          </div>
++        </div>
++      </section>
++
++      <section id="services" class="services">
++        <div class="container">
++          <div class="section-title">
++            <p class="eyebrow">Servicios corporativos</p>
++            <h2>Un ecosistema farmacéutico a medida.</h2>
++            <p>
++              Diseñamos soluciones para instituciones de salud, empresas y municipios.
++              Nuestro equipo clínico y tecnológico asegura eficiencia, trazabilidad y
++              cumplimiento normativo.
++            </p>
++          </div>
++          <div class="service-grid">
++            <article>
++              <h3>Dispensación clínica</h3>
++              <p>
++                Protocolos personalizados, validación farmacéutica y entrega supervisada para
++                pacientes crónicos.
++              </p>
++            </article>
++            <article>
++              <h3>Portal de colaboradores</h3>
++              <p>
++                Acceso exclusivo para beneficios corporativos, seguimiento de compras y
++                notificaciones automáticas.
++              </p>
++            </article>
++            <article>
++              <h3>Telefarmacia</h3>
++              <p>
++                Videoasistencia con químicos farmacéuticos certificados y atención inmediata.
++              </p>
++            </article>
++            <article>
++              <h3>Logística segura</h3>
++              <p>
++                Cadena de frío monitoreada, tracking en tiempo real y cobertura nacional.
++              </p>
++            </article>
++            <article>
++              <h3>Gestión de recetas</h3>
++              <p>
++                Integración con receta electrónica y custodia digital de documentos médicos.
++              </p>
++            </article>
++            <article>
++              <h3>Analítica de consumo</h3>
++              <p>
++                Reportes ejecutivos para decisiones clínicas y presupuestarias informadas.
++              </p>
++            </article>
++          </div>
++        </div>
++      </section>
++
++      <section id="contact" class="contact">
++        <div class="container contact-grid">
++          <div>
++            <div class="section-title">
++              <p class="eyebrow">Contacto</p>
++              <h2>Conversemos sobre las necesidades de tu organización.</h2>
++              <p>
++                Nuestro equipo responde en menos de 24 horas hábiles. Completa el formulario y
++                recibirá un correo automático en nuestra mesa comercial.
++              </p>
++            </div>
++            <div class="contact-info">
++              <div>
++                <span>Teléfono</span>
++                <strong>+56 2 2345 6789</strong>
++              </div>
++              <div>
++                <span>Email</span>
++                <strong>contacto@farmaciavidasana.cl</strong>
++              </div>
++              <div>
++                <span>Dirección</span>
++                <strong>Av. Providencia 1208, Santiago</strong>
++              </div>
++            </div>
++          </div>
++          <form id="contact-form" class="form-card">
++            <label>
++              Nombre y apellido
++              <input type="text" name="name" placeholder="Ej: María Torres" required />
++            </label>
++            <label>
++              Empresa / Institución
++              <input type="text" name="company" placeholder="Ej: Clínica Andes" required />
++            </label>
++            <label>
++              Correo electrónico
++              <input type="email" name="email" placeholder="nombre@empresa.cl" required />
++            </label>
++            <label>
++              Mensaje
++              <textarea
++                name="message"
++                rows="4"
++                placeholder="Cuéntanos qué necesitas"
++                required
++              ></textarea>
++            </label>
++            <button type="submit" class="primary">Enviar solicitud</button>
++            <p class="helper-text" id="contact-feedback" aria-live="polite"></p>
++          </form>
++        </div>
++      </section>
++
++      <section id="prescription" class="prescription">
++        <div class="container prescription-grid">
++          <div>
++            <div class="section-title">
++              <p class="eyebrow">Receta médica</p>
++              <h2>Sube tu receta en PDF o JPG.</h2>
++              <p>
++                Validamos la documentación de acuerdo con normativa ISP y protegemos tus datos
++                bajo estándares de seguridad.
++              </p>
++            </div>
++            <ul class="checklist">
++              <li>Adjunta una receta legible y vigente.</li>
++              <li>Incluye nombre del paciente y RUT.</li>
++              <li>Adjunta indicaciones y firma médica.</li>
++            </ul>
++          </div>
++          <form id="prescription-form" class="form-card" enctype="multipart/form-data">
++            <label>
++              Nombre completo
++              <input type="text" name="patient" required />
++            </label>
++            <label>
++              RUT
++              <input type="text" name="rut" placeholder="12.345.678-9" required />
++            </label>
++            <label>
++              Email de contacto
++              <input type="email" name="patientEmail" required />
++            </label>
++            <label>
++              Receta (PDF/JPG)
++              <input type="file" name="file" accept=".pdf,.jpg,.jpeg" required />
++            </label>
++            <p class="privacy-note">
++              Tus datos personales y la receta médica se utilizan solo para validar la
++              dispensación y se resguardan conforme a la Ley 19.628 y normativa ISP.
++            </p>
++            <button type="submit" class="primary">Enviar receta</button>
++            <p class="helper-text" id="prescription-feedback" aria-live="polite"></p>
++          </form>
++        </div>
++      </section>
++    </main>
++
++    <footer class="site-footer">
++      <div class="container footer-content">
++        <div>
++          <p class="brand-name">Farmacia Vida Sana</p>
++          <p>Corporativo | Chile</p>
++        </div>
++        <div>
++          <p>Horario de atención</p>
++          <strong>Lunes a domingo 08:00 - 22:00</strong>
++        </div>
++        <div>
++          <p>Compliance</p>
++          <strong>ISP | Ley 19.628</strong>
++        </div>
++      </div>
++    </footer>
++
++    <script src="script.js"></script>
++  </body>
++</html>
+ 
+EOF
+)
